@@ -1,3 +1,4 @@
+"use client" // Componente Renderizador
 import React, { useState, useEffect } from 'react';
 import { Search, Calendar, MapPin, User, LogOut, QrCode } from 'lucide-react';
 import { Button } from '@/components/ui/button';
