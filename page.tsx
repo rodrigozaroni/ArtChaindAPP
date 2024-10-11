@@ -57,15 +57,15 @@ const QRCodeScanner = ({ onScan }) => {
 // AttendanceCertificate component definition
 const AttendanceCertificate = ({ eventTitle, attendeeName, date }) => (
   <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-    <h2 className="text-3xl font-bold mb-4">Certificate of Attendance</h2>
-    <p className="text-xl mb-4">This certifies that</p>
+    <h2 className="text-3xl font-bold mb-4">Certificado de Participação</h2>
+    <p className="text-xl mb-4">Certificamos que o Aluno(a) </p>
     <p className="text-2xl font-semibold mb-4">{attendeeName}</p>
-    <p className="text-xl mb-4">has attended</p>
+    <p className="text-xl mb-4">participou do</p>
     <p className="text-2xl font-semibold mb-4">{eventTitle}</p>
-    <p className="text-xl mb-4">for a duration of 4 hours on</p>
+    <p className="text-xl mb-4">Contando como 4 horas de HH</p>
     <p className="text-2xl font-semibold mb-8">{date}</p>
     <div className="border-t-2 border-gray-300 pt-4">
-      <p className="text-lg font-semibold">EventHub</p>
+      <p className="text-lg font-semibold">ArtChain</p>
     </div>
   </div>
 );
@@ -94,21 +94,21 @@ const ArtChainFrontend = () => {
   };
 
   const mockUserEvents = [
-    { id: 101, title: "Web Development Workshop", date: formatDate(currentDate), location: "Online", category: "Technology", imageUrl: "/api/placeholder/400/200" },
-    { id: 102, title: "Digital Marketing Seminar", date: formatDate(nextWeek), location: "New York", category: "Business", imageUrl: "/api/placeholder/400/200" },
+    { id: 101, title: "ArtChain Pitch", date: formatDate(currentDate), location: "Online", category: "Competição", imageUrl: "https://ifpr.edu.br/irati/wp-content/uploads/sites/14/2024/04/concurso-de-artes-visuais-do-ifpr-irati.jpg"},
+    { id: 102, title: "ArtChain Workshop", date: formatDate(nextWeek), location: "Online", category: "Competição", imageUrl: "https://ifpr.edu.br/irati/wp-content/uploads/sites/14/2024/04/concurso-de-artes-visuais-do-ifpr-irati.jpg"},
   ];
 
   const dummyEvents = [
-    { id: 1, title: "Summer Music Festival", date: formatDate(currentDate), location: "New York", category: "Music", imageUrl: "/api/placeholder/400/200" },
-    { id: 2, title: "Tech Conference 2024", date: formatDate(nextWeek), location: "San Francisco", category: "Technology", imageUrl: "/api/placeholder/400/200" },
-    { id: 3, title: "Food & Wine Expo", date: "2024-10-01", location: "Chicago", category: "Food", imageUrl: "/api/placeholder/400/200" },
-    { id: 4, title: "Art Gallery Opening", date: "2024-07-20", location: "Los Angeles", category: "Art", imageUrl: "/api/placeholder/400/200" },
-    { id: 5, title: "Marathon 2024", date: "2024-11-10", location: "Boston", category: "Sports", imageUrl: "/api/placeholder/400/200" },
-    { id: 6, title: "Book Fair", date: "2024-09-15", location: "Seattle", category: "Literature", imageUrl: "/api/placeholder/400/200" },
-    { id: 7, title: "Comedy Night", date: "2024-08-30", location: "Chicago", category: "Entertainment", imageUrl: "/api/placeholder/400/200" },
-    { id: 8, title: "Startup Pitch Competition", date: "2024-10-20", location: "Austin", category: "Business", imageUrl: "/api/placeholder/400/200" },
-    { id: 9, title: "AI and Machine Learning Conference", date: formatDate(currentDate), location: "San Francisco", category: "Technology", imageUrl: "/api/placeholder/400/200" },
-    { id: 10, title: "Sustainable Living Expo", date: formatDate(nextWeek), location: "Portland", category: "Lifestyle", imageUrl: "/api/placeholder/400/200" },
+    { id: 1, title: "Exposição de NFTArt", date: formatDate(currentDate), location: "Rio de Janeiro", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 2, title: "Sinfonia Digital", date: formatDate(nextWeek), location: "São Paulo", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 3, title: "Exposição de Fotos", date: "2024-10-01", location: "Belo Horizonte", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 4, title: "Abertura da Galeria de Arte", date: "2024-07-20", location: "Rio de Janeiro", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 5, title: "ArtChain Hackathon", date: "2024-11-10", location: "Rio de Janeiro", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 6, title: "Workshop de Artes", date: "2024-09-15", location: "Petrópolis", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 7, title: "Exposição de Fotos", date: "2024-08-30", location: "Curitiba", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 8, title: "Digital Artweek", date: "2024-10-20", location: "Salvador", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 9, title: "Visita ao Teatro Municipal", date: formatDate(currentDate), location: "Rio de Janeiro", category: "Arte", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
+    { id: 10, title: "Blockchain Week", date: formatDate(nextWeek), location: "Miami", category: "Internacional", imageUrl: "https://www.infura.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6g6hg01fg28j%2FKFPYuRLDjMt5LBDcfzWMU%2F04ecf96366ef87c4f5f3dee724089175%2Fdet-bg.png&w=1080&q=75" },
   ];
 
   const filteredEvents = dummyEvents.filter((event) => {
@@ -126,13 +126,14 @@ const ArtChainFrontend = () => {
     currentPage * itemsPerPage
   );
 
+// Edite esta parte do código para mudar para login via Metamask
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === 'user' && password === 'password') {
+    if (username === 'artchain' && password === 'artchain') {
       setIsLoggedIn(true);
       setUserEvents(mockUserEvents);
     } else {
-      alert('Invalid credentials');
+      alert('Usuário Inválido');
     }
   };
 
@@ -166,12 +167,13 @@ const ArtChainFrontend = () => {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-blue-600 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">EventHub</h1>
+          <h1 className="text-2xl font-bold">ArtChain - Eventos de Arte</h1>
           <nav>
             <ul className="flex space-x-4">
               <li><a href="#" className="hover:text-blue-200">Home</a></li>
-              <li><a href="#" className="hover:text-blue-200">Create Event</a></li>
-              <li><a href="#" className="hover:text-blue-200">My Tickets</a></li>
+              <li><a href="#" className="hover:text-blue-200">Acesso IES</a></li>
+              <li><a href="#" className="hover:text-blue-200">Meus Comprovantes</a></li>
+              <li><a href="#" className="hover:text-blue-200">Checkin</a></li>
               {isLoggedIn ? (
                 <li>
                   <button onClick={handleLogout} className="flex items-center hover:text-blue-200">
@@ -206,7 +208,7 @@ const ArtChainFrontend = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 className="flex-grow"
               />
-              <Button type="submit">Login</Button>
+              <Button type="submit">ENTRAR</Button>
             </div>
           </form>
         )}
@@ -215,7 +217,7 @@ const ArtChainFrontend = () => {
           <div className="flex items-center bg-white rounded-lg shadow-md">
             <Input
               type="text"
-              placeholder="Search events..."
+              placeholder="Procurar Eventos..."
               className="flex-grow rounded-l-lg"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -233,38 +235,37 @@ const ArtChainFrontend = () => {
             onChange={(e) => setDateFilter(e.target.value)}
             className="flex-grow"
           />
+C.
           <Select
             value={categoryFilter}
             onChange={(e) => setCategoryFilter(e.target.value)}
             className="flex-grow"
           >
-            <option value="">All Categories</option>
-            <option value="Music">Music</option>
-            <option value="Technology">Technology</option>
-            <option value="Food">Food</option>
-            <option value="Art">Art</option>
-            <option value="Sports">Sports</option>
-            <option value="Business">Business</option>
-            <option value="Lifestyle">Lifestyle</option>
+            <option value="">Todas Categorias</option>
+            <option value="Arte">Arte</option>
+            <option value="Música">Música</option>
+            <option value="Fotografia">Fotografia</option>
+            <option value="Teatro">Teatro</option>
           </Select>
+L.          
           <Select
             value={locationFilter}
             onChange={(e) => setLocationFilter(e.target.value)}
             className="flex-grow"
           >
-            <option value="">All Locations</option>
-            <option value="New York">New York</option>
-            <option value="San Francisco">San Francisco</option>
-            <option value="Chicago">Chicago</option>
-            <option value="Los Angeles">Los Angeles</option>
-            <option value="Boston">Boston</option>
+            <option value="">Todas</option>
             <option value="Online">Online</option>
+            <option value="Rio de Janeiro">Rio</option>
+            <option value="São Paulo">SAMPA</option>
+            <option value="Petrópolis">Petrópolis</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Curitiba">Curitiba</option>
           </Select>
         </div>
 
         {isLoggedIn && (
           <div className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">My Events</h2>
+            <h2 className="text-2xl font-bold mb-4">Meus Eventos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {userEvents.map((event) => (
                 <EventCard key={event.id} {...event} isUserEvent={true} />
@@ -277,7 +278,7 @@ const ArtChainFrontend = () => {
           </div>
         )}
 
-        <h2 className="text-2xl font-bold mb-4">All Events</h2>
+        <h2 className="text-2xl font-bold mb-4">Todos Eventos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {paginatedEvents.map((event) => (
             <EventCard key={event.id} {...event} />
